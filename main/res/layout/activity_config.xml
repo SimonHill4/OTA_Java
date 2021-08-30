@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10.0dip"
+    android:background="@drawable/item_bg"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <TextView
+        android:id="@+id/module_name"
+        style="@style/module_name_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dip"
+        android:background="@drawable/item_bg"
+        android:orientation="vertical"
+        android:padding="10.0dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                style="@style/module_layout_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="IP:" />
+
+            <EditText
+                android:id="@+id/ipcontent"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:maxLength="15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                style="@style/module_layout_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="PORT:" />
+
+            <EditText
+                android:id="@+id/port"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:maxLength="15"
+                android:inputType="number"
+                android:maxLines="4"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ipconfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:text="确定" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
